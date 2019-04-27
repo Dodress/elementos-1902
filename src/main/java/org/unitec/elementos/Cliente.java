@@ -49,6 +49,18 @@ public class Cliente {
     public Cliente() {
     }
 
+    public Cliente(Long id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+
+    public Cliente(Long id, String nombre, Orden orden, Localizacion localizacion) {
+        this.id = id;
+        this.nombre = nombre;
+        this.orden = orden;
+        this.localizacion = localizacion;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" + "id=" + id + ", nombre=" + nombre + ", ornde=" + orden + ", localizacion=" + localizacion + '}';
